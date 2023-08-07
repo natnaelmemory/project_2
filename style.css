@@ -11,26 +11,110 @@ body{
     background-color: lightcoral;
     background-image: url('/resource/images/bg-intro-desktop.png');
     font-size: 1.6rem;
-
 }
 .wrapper{
- 
+    display:flex;
+    /* border:3px solid blue; */
+    max-width:960px;
+    margin:0 auto;
+    justify-content: space-between;
     
-    width:600px;
-    background-color: white;
-    border-radius: 8px;
+    margin-top: 100px;
 }
+.main-left{
+    /* border:2px solid;  */
+    max-width:375px;
+    margin-top: 65px;
+    margin-bottom: 165px;
+    margin-left: 70px;
+}
+h2{
+    font-size: 40px;
+    margin-bottom: 25px;
+    color:white;
+    font-weight: 900;
+}
+.content-text{
+    color:white;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.main-right{
+   
+    /* border:2px solid; */
+    max-width:500px;
+    
+}
+
 .input-field form{
     display:flex;
     flex-direction: column;
-    padding:35px;
-    
+    padding:15px;
+}
+.input-field{
+    background-color: white;
+    border-radius: 10px;
 }
 input{
-    
     padding:20px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+}
+.try-it{
+    color:white;
+    font-weight: 700;
     margin-bottom: 20px;
+    /* border:1px solid brown; */
+    padding:15px;
+    margin:15px 0;
+    background-color: rgb(67, 67, 155);
     border-radius: 8px;
-    font-weight:900;
+}
+.light-font{
+    font-weight: 100;
     
 }
+a{
+    display:block;
+    /* border:1px solid brown; */
+    margin:0 15px 0 15px;
+    max-width:450px;
+    text-align: center;
+    padding:15px;
+    text-decoration: none;
+    color:white;
+    background-color: rgb(120, 182, 120);
+    border-radius: 10px;
+}
+.terms{
+    margin-left:15px;
+    margin-top: 15px;
+    padding-bottom: 40px;
+    color:grey;
+}
+.red-text{
+    color:red;
+}
+
+@media(max-width:719px){
+    .wrapper{
+        margin-top: 50px;
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .main-right,.main-left{
+        margin-left: 50px;
+    }
+    .main-left{
+        margin-bottom: 50px;
+    }
+}
+    @media(max-width:568px){
+       .main-left,.main-right{
+        margin:20px;
+       } 
+       .wrapper{
+        margin-top: 0px;
+       }
+    }
